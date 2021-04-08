@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&family=Open+Sans:wght@300&display=swap');
+
+/* Globales */
+.content{
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+p{
+  font-weight: 400;
+  margin-bottom: 6rem;
+}
+
+a{
+  padding: 1em 3em;
+  border-radius: 2rem;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+a:hover{
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+/* Sedans */
+.sedans{
+  background-color: #e28424;
+  color: #fff;
+  padding: 6rem 3rem;
+}
+
+.sedans a{
+  color: #e28424;
+}
+
+.sedans a:hover{
+  background-color: #e28424;
+  color: #fff;
+}
+
+/* Suvs */
+.suvs{
+  background-color: #016972;
+  color: #fff;
+  padding: 6rem 3rem;
+}
+
+.suvs a{
+  color: #016972;
+}
+
+.suvs a:hover{
+  background-color: #016972;
+  color: #fff;
+}
+
+/* Luxury */
+.luxury{
+  background-color: #00413e;
+  color: #fff;
+  padding: 6rem 3rem;
+}
+
+.luxury a{
+  color: #00413e;
+}
+
+.luxury a:hover{
+  background-color: #00413e;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .sedans{
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+  }
+
+  .luxury{
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+  }
+}
+
+/* Mobile Design  */
+@media only screen and (max-width: 768px){
+  .content{
+    display: block;
+  }
+
+  .sedans{
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+  }
+
+  .luxury{
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+  }
+}
